@@ -20,6 +20,9 @@ INSTALLED_APPS = [
     # 3rd app
     'corsheaders',
     'rest_framework',
+
+    # my app
+    'course',
 ]
 
 MIDDLEWARE = [
