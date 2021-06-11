@@ -10,5 +10,8 @@ class Course(models.Model):
     start_date = models.DateField(null=True, blank=True)
     end_date = models.DateField(null=True, blank=True)
 
+    class Meta:
+        db_table = 'course'
+
     def __str__(self):
         return self.name
