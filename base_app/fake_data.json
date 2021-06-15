@@ -1,0 +1,601 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2021-06-14T11:24:49.254Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Tom Cat",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2021-06-14T11:25:07.831Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Jerry Mouse",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2021-06-14T11:25:47.101Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Hinting to mouse",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2021-06-14T11:26:17.567Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "cat2 cat2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2021-06-14T11:26:31.427Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "cat3 cat3",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2021-06-14T11:26:52.231Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "cat4 cat4",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2021-06-14T11:27:12.694Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "6",
+    "object_repr": "cat5 cat5",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2021-06-14T11:27:28.843Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Hinting to mouse Tom Cat",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2021-06-14T11:27:46.883Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "Hinting to mouse cat2 cat2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2021-06-14T11:27:56.134Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "Hinting to mouse cat3 cat3",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2021-06-14T11:28:24.414Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "Hinting to mouse cat4 cat4",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2021-06-14T11:28:31.604Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "Hinting to mouse cat5 cat5",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2021-06-14T11:28:55.355Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "7",
+    "object_repr": "cat6 cat6",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2021-06-14T11:29:17.479Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "8",
+    "object_repr": "cat7 cat7",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2021-06-14T11:29:55.961Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "9",
+    "object_repr": "cat8 cat8",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2021-06-14T11:30:09.884Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "10",
+    "object_repr": "cat9 cay9",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2021-06-14T11:30:21.882Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "11",
+    "object_repr": "cat10 cat10",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2021-06-14T11:30:38.612Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "12",
+    "object_repr": "cat11 cat11",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2021-06-14T11:30:50.613Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "13",
+    "object_repr": "cat12 cat12",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2021-06-14T11:31:06.467Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "6",
+    "object_repr": "Hinting to mouse cat6 cat6",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2021-06-14T11:31:13.558Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "7",
+    "object_repr": "Hinting to mouse cat8 cat8",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2021-06-14T11:31:20.291Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "8",
+    "object_repr": "Hinting to mouse cat9 cay9",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2021-06-14T11:31:34.863Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "9",
+    "object_repr": "Hinting to mouse cat10 cat10",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2021-06-14T11:31:52.678Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "10",
+    "object_repr": "Hinting to mouse cat7 cat7",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2021-06-14T11:32:01.106Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "11",
+    "object_repr": "Hinting to mouse cat11 cat11",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2021-06-14T11:32:08.208Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "12",
+    "object_repr": "Hinting to mouse cat12 cat12",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$mhh7di0lGuGzclhsGLptMf$innmTDa5xdzGxCPdqcQtNmlC8PTpVHBOBZmGfk5tSzQ=",
+    "last_login": "2021-06-14T11:24:29.526Z",
+    "is_superuser": true,
+    "username": "atom",
+    "first_name": "",
+    "last_name": "",
+    "email": "atom2@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2021-06-14T11:24:18.160Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "so2e8wdxhqd433uexyl4sy381tj7ojrr",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQRO_iGln2-ocp6TmDtf4sDiBbipMKcXcSKQVIU817M28WcF1qWEeZw5TZhUl2-u0ipmdpO8gPbPfOU2_LPEW-K_ygg996Lq_r4f4dVBx1W5OMUStrCPEM4JyPxpVIgNoZKcASkPXgjVUF0ZotQhRCIu1BJe_Z5wveTDev:1lskhh:vVc-xFjsWKMRiEikIGKU-xUmH7f0UreWxjoKlEB5LCY",
+    "expire_date": "2021-06-28T11:24:29.533Z"
+  }
+},
+{
+  "model": "course.course",
+  "pk": 1,
+  "fields": {
+    "name": "Hinting to mouse",
+    "description": "Hunting",
+    "start_date": "2021-06-14",
+    "end_date": "2021-06-14"
+  }
+},
+{
+  "model": "student.student",
+  "pk": 1,
+  "fields": {
+    "first_name": "Tom",
+    "last_name": "Cat",
+    "email": "cat@gmail.com"
+  }
+},
+{
+  "model": "student.student",
+  "pk": 2,
+  "fields": {
+    "first_name": "Jerry",
+    "last_name": "Mouse",
+    "email": "mouse@gmail.com"
+  }
+},
+{
+  "model": "student.student",
+  "pk": 3,
+  "fields": {
+    "first_name": "cat2",
+    "last_name": "cat2",
+    "email": "cat2@gmail.com"
+  }
+},
+{
+  "model": "student.student",
+  "pk": 4,
+  "fields": {
+    "first_name": "cat3",
+    "last_name": "cat3",
+    "email": "cat3@gmail.com"
+  }
+},
+{
+  "model": "student.student",
+  "pk": 5,
+  "fields": {
+    "first_name": "cat4",
+    "last_name": "cat4",
+    "email": "cat4@gmail.com"
+  }
+},
+{
+  "model": "student.student",
+  "pk": 6,
+  "fields": {
+    "first_name": "cat5",
+    "last_name": "cat5",
+    "email": "cat5@gmal.com"
+  }
+},
+{
+  "model": "student.student",
+  "pk": 7,
+  "fields": {
+    "first_name": "cat6",
+    "last_name": "cat6",
+    "email": "cat6@gmail.com"
+  }
+},
+{
+  "model": "student.student",
+  "pk": 8,
+  "fields": {
+    "first_name": "cat7",
+    "last_name": "cat7",
+    "email": "cat7@gmail.com"
+  }
+},
+{
+  "model": "student.student",
+  "pk": 9,
+  "fields": {
+    "first_name": "cat8",
+    "last_name": "cat8",
+    "email": "cat8@gmail.com"
+  }
+},
+{
+  "model": "student.student",
+  "pk": 10,
+  "fields": {
+    "first_name": "cat9",
+    "last_name": "cay9",
+    "email": "cat9@gmail.com"
+  }
+},
+{
+  "model": "student.student",
+  "pk": 11,
+  "fields": {
+    "first_name": "cat10",
+    "last_name": "cat10",
+    "email": "cat10@gmail.com"
+  }
+},
+{
+  "model": "student.student",
+  "pk": 12,
+  "fields": {
+    "first_name": "cat11",
+    "last_name": "cat11",
+    "email": "cat11@gmail.com"
+  }
+},
+{
+  "model": "student.student",
+  "pk": 13,
+  "fields": {
+    "first_name": "cat12",
+    "last_name": "cat12",
+    "email": "cat12@gmail.com"
+  }
+},
+{
+  "model": "participant.courseparticipant",
+  "pk": 1,
+  "fields": {
+    "course": 1,
+    "student": 1,
+    "completed": false
+  }
+},
+{
+  "model": "participant.courseparticipant",
+  "pk": 2,
+  "fields": {
+    "course": 1,
+    "student": 3,
+    "completed": false
+  }
+},
+{
+  "model": "participant.courseparticipant",
+  "pk": 3,
+  "fields": {
+    "course": 1,
+    "student": 4,
+    "completed": false
+  }
+},
+{
+  "model": "participant.courseparticipant",
+  "pk": 4,
+  "fields": {
+    "course": 1,
+    "student": 5,
+    "completed": false
+  }
+},
+{
+  "model": "participant.courseparticipant",
+  "pk": 5,
+  "fields": {
+    "course": 1,
+    "student": 6,
+    "completed": false
+  }
+},
+{
+  "model": "participant.courseparticipant",
+  "pk": 6,
+  "fields": {
+    "course": 1,
+    "student": 7,
+    "completed": false
+  }
+},
+{
+  "model": "participant.courseparticipant",
+  "pk": 7,
+  "fields": {
+    "course": 1,
+    "student": 9,
+    "completed": false
+  }
+},
+{
+  "model": "participant.courseparticipant",
+  "pk": 8,
+  "fields": {
+    "course": 1,
+    "student": 10,
+    "completed": false
+  }
+},
+{
+  "model": "participant.courseparticipant",
+  "pk": 9,
+  "fields": {
+    "course": 1,
+    "student": 11,
+    "completed": false
+  }
+},
+{
+  "model": "participant.courseparticipant",
+  "pk": 10,
+  "fields": {
+    "course": 1,
+    "student": 8,
+    "completed": false
+  }
+},
+{
+  "model": "participant.courseparticipant",
+  "pk": 11,
+  "fields": {
+    "course": 1,
+    "student": 12,
+    "completed": false
+  }
+},
+{
+  "model": "participant.courseparticipant",
+  "pk": 12,
+  "fields": {
+    "course": 1,
+    "student": 13,
+    "completed": false
+  }
+}
+]

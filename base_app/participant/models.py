@@ -20,6 +20,7 @@ class CourseParticipant(models.Model):
     completed = models.BooleanField(null=False, default=False)
 
     class Meta:
+        unique_together = [['student', 'course']]
         db_table = 'course_participant'
 
     def __str__(self):
