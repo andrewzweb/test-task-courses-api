@@ -12,3 +12,11 @@ class CourseParticipantSerializer(serializers.ModelSerializer):
     class Meta:
         model = CourseParticipant
         fields = ('id', 'student')
+
+
+class ParticipantSerializer(serializers.ModelSerializer):
+    '''participant serializer'''
+
+    class Meta:
+        model = CourseParticipant
+        fields = ('id', 'student', 'course')
