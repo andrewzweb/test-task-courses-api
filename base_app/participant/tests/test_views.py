@@ -2,12 +2,10 @@ import pytest
 from django.urls import reverse
 from rest_framework import status
 from rest_framework.test import APIClient
-from rest_framework.parsers import JSONParser
 from mixer.backend.django import mixer
 from ..models import CourseParticipant
-from ..views import participant_detail
-pytestmark = pytest.mark.django_db
 from faker import Faker
+pytestmark = pytest.mark.django_db
 
 
 @pytest.mark.django_db

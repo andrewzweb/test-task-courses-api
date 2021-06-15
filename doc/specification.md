@@ -16,9 +16,9 @@ Entities:
     - completed: bool
 
 API:
-  - [ ] list courses (name, start_date, end_date, students_count, participants(please return 10 first participants))
-  - [ ] assign/unassign students to/from course
-  - [ ] report in csv format:
+  - [x] list courses (name, start_date, end_date, students_count, participants(please return 10 first participants))
+  - [x] assign/unassign students to/from course
+  - [x] report in csv format:
     - student full name
     - number of assigned courses to student
     - number of completed courses by student

@@ -42,5 +42,5 @@ def participant_detail(request, course_id, student_id):
             )
             participant.delete()
             return Response(status=status.HTTP_204_NO_CONTENT)
-        except: 
+        except:
             return Response(status = status.HTTP_400_BAD_REQUEST)
