@@ -19,13 +19,6 @@ def participant_detail(request, course_id, student_id):
     except Student.DoesNotExist:
         return Response(status=status.HTTP_404_NOT_FOUND)
 
-    try:
-        participant = CourseParticipant.objects.get(
-            course=course,
-            student=student
-        )
-    except: pass
-    
     if request.method == 'POST':
         serializer = ParticipantSerializer(data=request.data)
         if serializer.is_valid(): 
@@ -42,6 +35,12 @@ def participant_detail(request, course_id, student_id):
         )
 
     elif request.method == 'DELETE':
-        participant.delete()
-        return Response(status=status.HTTP_204_NO_CONTENT)
-
+        try: 
+            participant = CourseParticipant.objects.get(
+                course__id=course.id,
+                student__id=student.id
+            )
+            participant.delete()
+            return Response(status=status.HTTP_204_NO_CONTENT)
+        except: 
+            return Response(status = status.HTTP_400_BAD_REQUEST)

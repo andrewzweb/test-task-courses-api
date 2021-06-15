@@ -13,7 +13,7 @@ from faker import Faker
 @pytest.mark.django_db
 class TestParticipantSubscribeToCourse:
     '''
-    testcase participant subscribe and unsubscribe to course 
+    testcase participant subscribe to course 
     '''
 
     def setup(self):
@@ -81,5 +81,57 @@ class TestParticipantSubscribeToCourse:
         assert response.status_code == status.HTTP_404_NOT_FOUND
         assert CourseParticipant.objects.count() == 0
 
-    def test_unsubscribe_to_course(self):
-        pass
+
+@pytest.mark.django_db
+class TestParticipantUnsubscribe:
+    '''
+    testcase participant unsubscribe from course 
+    '''
+
+    def setup(self):
+        self.client = APIClient()
+        self.fake = Faker()
+
+    def test_unsubscribe_student_form_course(self):
+
+        student = mixer.blend('student.Student')
+        course = mixer.blend('course.Course')
+        mixer.blend(
+            'participant.CourseParticipant',
+            course=course,
+            student=student
+        )
+
+        assert CourseParticipant.objects.count() == 1
+
+        response = self.client.delete(
+            reverse(
+                'participant:participant_unsubscribe',
+                kwargs={
+                    'course_id': course.id,
+                    'student_id': student.id,
+                }
+            ),
+            data = {
+                'student': student.id,
+                'course': course.id,
+            }, 
+            format='json'
+        )
+        assert response.status_code == status.HTTP_204_NO_CONTENT
+        assert CourseParticipant.objects.count() == 0
+
+    def test_try_delete_dont_exist_participant(self):
+        
+        response = self.client.delete(
+            reverse(
+                'participant:participant_unsubscribe',
+                kwargs={
+                    'course_id': self.fake.random_int(1,100),
+                    'student_id': self.fake.random_int(1,100),
+                }
+            ),
+            format='json'
+        )
+        
+        assert response.status_code == status.HTTP_404_NOT_FOUND
