@@ -23,16 +23,16 @@ def participant_detail(request, course_id, student_id):
         serializer = ParticipantSerializer(data=request.data)
         if serializer.is_valid(): 
             serializer.save()
+            return Response(
+                {'data': serializer.data},
+                status = status.HTTP_201_CREATED
+            )
         else:
-            Response(
+            return Response(
             {'data': serializer.data},
             status = status.HTTP_400_BAD_REQUEST
         )
 
-        return Response(
-            {'data': serializer.data},
-            status = status.HTTP_201_CREATED
-        )
 
     elif request.method == 'DELETE':
         try: 

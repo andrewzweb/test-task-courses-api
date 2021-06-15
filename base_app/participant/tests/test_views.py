@@ -81,6 +81,29 @@ class TestParticipantSubscribeToCourse:
         assert response.status_code == status.HTTP_404_NOT_FOUND
         assert CourseParticipant.objects.count() == 0
 
+    def test_send_not_valid_data(self):
+        
+        course = mixer.blend('course.Course')
+        student = mixer.blend('student.Student')
+        
+        response = self.client.post(
+            reverse(
+                'participant:participant_subscribe',
+                kwargs={
+                    'course_id': course.id,
+                    'student_id': student.id,
+                }
+            ),
+            data = {
+                'course': self.fake.name(),
+                'student': self.fake.random_int(10,100),
+            }, 
+            format='json'
+        )
+        
+        assert response.status_code == status.HTTP_400_BAD_REQUEST
+        assert CourseParticipant.objects.count() == 0
+        
 
 @pytest.mark.django_db
 class TestParticipantUnsubscribe:
@@ -122,16 +145,19 @@ class TestParticipantUnsubscribe:
         assert CourseParticipant.objects.count() == 0
 
     def test_try_delete_dont_exist_participant(self):
+
+        student = mixer.blend('student.Student')
+        course = mixer.blend('course.Course')
         
         response = self.client.delete(
             reverse(
                 'participant:participant_unsubscribe',
                 kwargs={
-                    'course_id': self.fake.random_int(1,100),
-                    'student_id': self.fake.random_int(1,100),
+                    'course_id': course.id,
+                    'student_id': student.id,
                 }
             ),
             format='json'
         )
         
-        assert response.status_code == status.HTTP_404_NOT_FOUND
+        assert response.status_code == status.HTTP_400_BAD_REQUEST
